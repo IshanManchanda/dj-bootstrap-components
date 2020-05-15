@@ -4,9 +4,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+sphinx = "*"
 
 [packages]
 django = "==3.0.6"
+recommonmark = "*"
+sphinx-rtd-theme = "*"
 
 [requires]
 python_version = "3.8"
