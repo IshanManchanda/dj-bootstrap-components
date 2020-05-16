@@ -1,6 +1,6 @@
 # Badges
 
-It is important to refrence the bootstrap documentation for how alerts work.
+It is important to reference the bootstrap documentation for how alerts work.
 This is how to include badges in your code
 
 ### Examples

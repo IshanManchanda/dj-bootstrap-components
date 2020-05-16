@@ -1,6 +1,6 @@
 # Alerts
 
-It is important to refrence the bootstrap documentation for how alerts work.
+It is important to reference the bootstrap documentation for how alerts work.
 This is how to include alerts in your code
 
 ### Examples
@@ -31,5 +31,5 @@ Add any one of the  the following in your code, to show an alert
     - overrides `<h4>` default, allows 1-6
     - _int_ 
 * **dismiss** 
-    - allows alert to be dismissable, requires bootstrap js
+    - allows alert to be dismissible, requires bootstrap js
     - _bool (Enter 'True' or 1)_

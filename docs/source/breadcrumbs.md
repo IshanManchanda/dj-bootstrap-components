@@ -33,13 +33,13 @@ CRUMBS = (('home', reverse('index')),
     - string
 
 * **seperator**
-    - Changes the seperator between elements; default: `/`
+    - Changes the separator between elements; default: `/`
     - accepts any normal character and the following symbols:
         * `<, >, |`
     - string
 
 * **Required: crumbs**
-    - Accepts a tuple or list from context that has the stucture `[(<breadcrumb-text>, <breadcrumb-link>), ...]`
+    - Accepts a tuple or list from context that has the structure `[(<breadcrumb-text>, <breadcrumb-link>), ...]`
     - tuple or list
 
 * **active_crumb**

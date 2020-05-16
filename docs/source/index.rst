@@ -16,6 +16,7 @@ Welcome to dj-bootstrap-components's documentation!
    Alerts <alerts>
    Badges <badges>
    Breadcrumbs <breadcrumbs>
+   Cards <cards>
 
 Indices and tables
 ==================
