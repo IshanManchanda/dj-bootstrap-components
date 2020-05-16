@@ -14,7 +14,8 @@ Welcome to dj-bootstrap-components's documentation!
    Getting Started <getting_started>
    Components <components>
    Alerts <alerts>
-
+   Badges <badges>
+   Breadcrumbs <breadcrumbs>
 
 Indices and tables
 ==================
