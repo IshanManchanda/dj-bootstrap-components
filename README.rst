@@ -7,6 +7,8 @@ Django Bootstrap 4 components
 Quick start
 -----------
 
+Documentation: https://dj-bootstrap-components.readthedocs.io/en/latest/
+
 1. Add "bootstrap_components" to your INSTALLED_APPS setting like this::
 
 	INSTALLED_APPS = [
