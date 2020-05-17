@@ -14,6 +14,8 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+master_doc = 'index'
+
 
 # -- Project information -----------------------------------------------------
 
@@ -22,7 +24,7 @@ copyright = '2020, Ishan Manchanda and Param Kapur'
 author = 'Ishan Manchanda and Param Kapur'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.1'
+release = 'v0.2.0'
 
 
 # -- General configuration ---------------------------------------------------
