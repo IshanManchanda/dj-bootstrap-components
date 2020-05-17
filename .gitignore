@@ -1,5 +1,6 @@
 # Folders to ignore
 staticfiles
+.vscode
 
 
 # Files to ignore
