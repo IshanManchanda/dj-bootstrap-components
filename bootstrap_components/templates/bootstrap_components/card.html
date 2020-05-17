@@ -1,0 +1,56 @@
+{% extends 'bootstrap_components/base.html' %}
+{% load util %}
+
+{% block content %}
+<div class="card {% if size_utilities %} {{ size_utilities }} {% endif %}">
+
+    {% if image_src %}
+        <img src="{{ image_src }}" class="card-img-top" alt="...">
+    {% endif%}
+
+    {% if title and subtitle %}
+	<div class="card-header">
+		<h5 class="card-title">{{ title }}</h5>
+        <h6 class="card-subtitle text-muted">{{ subtitle }}</h6>
+	</div>
+
+    {% elif title %}
+        <div class="card-header">
+            <h5 class="card-title">{{ title }}</h5>
+        </div>
+
+    {% elif subtitle %}
+        <div class="card-header">
+        <h6 class="card-subtitle text-muted">{{ subtitle }}</h6>
+        </div>
+    {% endif %}
+
+    {% if text %}
+    <div class="card-body">
+    	<p class="card-text">{{ text }}</p>
+    </div>
+    {% endif %}
+
+    {% if list_group %}
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        {% for item in list_group %}
+            <li class="list-group-item">{{ item.list_group_display_field }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if button1_text or button2_text %}
+      <div class="card-footer">
+        {% if button1_text %}
+        <a href="{{ button1_url }}"><button class="btn btn-primary">{{ button1_text }}</button></a>
+        {% endif %}
+        {% if button2_text %}
+          <a href="{{ button2_url }}"><button class="btn btn-primary">{{ button2_text }}</button></a>
+        {% endif %}
+      </div>
+    {% endif%}
+
+</div>
+{% endblock %}

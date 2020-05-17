@@ -1,0 +1,26 @@
+{% extends 'bootstrap_components/base.html' %}
+
+{% block content %}
+
+	<div class="alert alert-{{ color }} {% if dismiss == 'True' or dismiss == 1 %} alert-dismissible fade show {% endif %}" role="alert">
+
+		{% if heading %}
+			{% if heading_size %}
+				<h{{ heading_size }} class="alert-heading">{{ heading }}</h{{ heading_size }}>
+			{% else %}
+				<h4 class="alert-heading">{{ heading }} </h4>
+			{% endif %}
+			<hr>
+		{% endif %}
+
+		{{ content }}
+
+		{% if dismiss == 'True' or dismiss == 1 %}
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		{% endif %}
+
+	</div>
+
+{% endblock %}

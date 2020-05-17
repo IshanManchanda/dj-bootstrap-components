@@ -1,0 +1,55 @@
+{% extends 'bootstrap_components/base.html' %}
+{% load util %}
+
+{% block content %}
+
+	{% if separator %}
+		{% define separator as sep_class %}
+		{# deal with special symbols #}
+		{% if separator == ">" %}
+			{% define 'gt' as sep_class %}
+		{% elif separator == '<' %}
+			{% define 'lt' as sep_class %}
+		{% elif separator == '|' %}
+			{% define 'pipe' as sep_class %}
+		{% endif %}
+
+	{% else %}
+		{% define 'default' as sep_class %}
+		{% define '/' as separator %}
+	{% endif %}
+
+	<style>
+		/* Style to change separator  */
+		.separator{{ sep_class }} .breadcrumb-item + .breadcrumb-item::before {
+			content: "{{ separator|safe }}";
+		}
+	</style>
+
+	<div class="separator{{ sep_class }}">
+
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb" id="breadcrumb-list{{ sep_class }}">
+				{% for crumb_text, crumb_link in crumbs %}
+					{% if active_crumb %}
+						{% if active_crumb == forloop.counter0 %}
+							<li class="breadcrumb-item active" aria-current="page">{{ crumb_text }}</li>
+						{% else %}
+							<li class="breadcrumb-item"><a href="{{ crumb_link }}">{{ crumb_text }}</a></li>
+						{% endif %}
+					{% else %}
+						{% if crumbs|length == forloop.counter %} {# works because forloop.counter index starts from 0 #}
+							<li class="breadcrumb-item active" aria-current="page">{{ crumb_text }}</li>
+						{% else %}
+							<li class="breadcrumb-item"><a href="{{ crumb_link }}">{{ crumb_text }}</a></li>
+						{% endif %}
+					{% endif %}
+				{% empty %}
+					<li class="breadcrumb-item active" aria-current="page"><No Breadcrumbs</li>
+				{% endfor %}
+			</ol>
+		</nav>
+
+	</div>
+
+{% endblock %}

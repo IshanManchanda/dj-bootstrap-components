@@ -1,0 +1,16 @@
+{% extends 'bootstrap_components/base.html' %}
+{% load util %}
+
+
+{% block content %}
+	{# set defaults for arguments #}
+	{% if not color %}
+		{% define 'primary' as color  %}
+	{% endif %}
+
+	{% if href  %}
+		<a href="{{ href }}" class="badge {% if pill == 1 or pill == 'True' %} badge-pill {% endif %} badge-{{ color }}">{{ content }}</a>
+	{% else %}
+		<span class="badge {% if pill == 1 or pill == 'True' %} badge-pill {% endif %} badge-{{ color }}">{{ content }}</span>
+	{% endif %}
+{% endblock %}
