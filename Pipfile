@@ -4,14 +4,14 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "==6.1.2"
-pytest-django = "==4.2.0"
+pytest = "==6.2.4"
+pytest-django = "==4.3.0"
 recommonmark = "==0.6.0"
-sphinx = "==3.5.4"
+sphinx = "==4.0.2"
 sphinx-rtd-theme = "==0.5.2"
 
 [packages]
-django = "==3.2"
+django = "==3.2.4"
 
 [requires]
 python_version = "3.8"
