@@ -8,7 +8,7 @@ pytest = "==6.2.4"
 pytest-django = "==4.3.0"
 recommonmark = "==0.6.0"
 sphinx = "==4.0.2"
-sphinx-rtd-theme = "==0.5.0"
+sphinx-rtd-theme = "==0.5.2"
 
 [packages]
 django = "==3.2.4"
