@@ -7,7 +7,7 @@ verify_ssl = true
 pytest = "==6.2.4"
 pytest-django = "==4.3.0"
 recommonmark = "==0.7.1"
-sphinx = "==4.0.2"
+sphinx = "==4.0.3"
 sphinx-rtd-theme = "==0.5.2"
 
 [packages]
