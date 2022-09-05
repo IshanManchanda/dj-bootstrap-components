@@ -11,7 +11,7 @@ sphinx = "==4.1.2"
 sphinx-rtd-theme = "==0.5.2"
 
 [packages]
-django = "==3.2.6"
+django = "==4.1.1"
 
 [requires]
 python_version = "3.8"
